@@ -10,7 +10,7 @@
    ;; ========================================================================
    ;;  Settings
    ;; ========================================================================
-   ;; The bit size for the fixed point number system can be configured here.
+   ;; The bit size for the fixed-point number system can be configured here.
    ;;
    ;; - The binary expression for the numbers is in reverse order, where the
    ;;   most significant bit is at the right side.
@@ -24,7 +24,7 @@
    ;;  Usage
    ;; ========================================================================
    ;; - All functions after `negate` can be used as library functions.
-   ;; - `1` is an example variable bound to the scalar fixed point number 1.
+   ;; - `1` is an example variable bound to the scalar fixed-point number 1.
    ;; - Vectors are lists of scalars, and matrices are lists of vectors.
    ;; - In vecmatmulVAT, matmulABT, the second operand AT and BT are
    ;;   transposed. When calculating A dot B using matmulABT, B must be
@@ -106,7 +106,7 @@
      ((EQ NIL L) X)
      ((QUOTE T) (drop (CDR L) (CDR X))))))
  (QUOTE
-   ;; ufixmult : Unsigned fixed point multiplication
+   ;; ufixmult : Unsigned fixed-point multiplication
  )
  (QUOTE (LAMBDA (X Y)
    (take u0 (drop fracbitsize (umultnof X Y)))))
